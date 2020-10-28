@@ -2,7 +2,7 @@
 
 # JAVA组件漏洞
 
-[TOC]
+[fastjson](#Fastjson)
 
 
 
