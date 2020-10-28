@@ -52,8 +52,11 @@ Set[{"@type":"java.net.URL", "val":"dnslog"}
 (备注：根据实战中经验，更推荐使用Ldap协议进行漏洞利用）
 
 RMI协议的利用方式 在JDK 6u132/7u122/8u113 及以上版本中修复了
+
 LDAP协议的利用方式 在JDK 6u211/7u201/8u191 及以上版本中修复了
+
 LDAP的利用方式要优于RMI, 且LDAP可以直接返回序列化对象, 绕过更高版本的JDK限制
+
 当发现一台Redis的数据中含有@type的字样时，意味着AutoType多半是开的
 
 
