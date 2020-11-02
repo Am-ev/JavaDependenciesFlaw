@@ -15,8 +15,8 @@
 
 ### 查看版本
 ```
-1.{"@type":"java.lang.AutoCloseable"  From [浅蓝](https://b1ue.cn/archives/402.html)
-```
+1.{"@type":"java.lang.AutoCloseable"
+```From [浅蓝](https://b1ue.cn/archives/402.html)
 ### 版本 <= 1.2.48
 
 ### 回显 
